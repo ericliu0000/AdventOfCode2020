@@ -35,6 +35,7 @@ public class Passport {
             for (String j : passValues) {
                 if (!i.contains(j)) {
                     tempFlag = false;
+                    break;
                 }
             }
 
