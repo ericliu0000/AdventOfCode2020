@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class SumThree {
+public class D1P2 {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
 

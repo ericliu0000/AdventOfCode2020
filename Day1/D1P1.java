@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class SumTwo {
+public class D1P1 {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("input.txt");
 

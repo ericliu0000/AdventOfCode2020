@@ -3,14 +3,17 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Password {
+public class D2P2 {
     public static void main(String[] args) {
         File file = new File("input.txt");
         ArrayList<String> text = new ArrayList<>();
-        String temp, value;
+        String temp;
+
         char letter;
+        char[] value;
+
         int correctPasswords = 0;
-        int min, max;
+        int i1, i2;
 
         // read the file things but safely
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
@@ -22,19 +25,22 @@ public class Password {
         }
 
         for (String x : text) {
-            int letterCount = 0;
             String[] spaces = x.split(" ");
-            min = Integer.parseInt(spaces[0].split("-")[0]);
-            max = Integer.parseInt(spaces[0].split("-")[1]);
-            
+            i1 = Integer.parseInt(spaces[0].split("-")[0]);
+            i2 = Integer.parseInt(spaces[0].split("-")[1]);
+
             letter = spaces[1].toCharArray()[0];
-            value = spaces[2];
+            value = spaces[2].toCharArray();
 
-            for (char i : value.toCharArray()) {
-                if (i == letter) letterCount++;
+            if (((value[i1 - 1]) == letter) != ((value[i2 - 1]) == letter)) {
+                correctPasswords++;
+                System.out.println("\n\n");
+                System.out.println((value[i1 - 1]));
+                // System.out.println(letter);
+                // System.out.println(i1);
+                // System.out.println(i2);
+                System.out.println(value);
             }
-
-            if ((min <= letterCount) && (letterCount <= max)) correctPasswords++;
         }
 
         System.out.println(correctPasswords);

@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class AllCustoms {
+public class D6P2 {
     public static void main(String[] args) {
         File file = new File("input.txt");
         ArrayList<String> text = new ArrayList<>();

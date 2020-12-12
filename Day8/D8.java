@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Handheld {
+public class D8 {
     public static void main(String[] args) {
         File file = new File("input.txt");
         ArrayList<String> text = new ArrayList<>();
@@ -24,6 +24,7 @@ public class Handheld {
         ArrayList<String> copyText = text;
 
         // aw crap
+        // um don't worry about it i just did it by hand oops
         int z = 0;
         System.out.println(text.size());
         for (int i = 0; i < text.size(); i++) {

@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class Boarding {
+public class D5 {
     public static void main(String[] args) {
         File file = new File("input.txt");
         ArrayList<String> text = new ArrayList<>();
