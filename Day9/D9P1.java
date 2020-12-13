@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class D9 {
+public class D9P1 {
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<Long> text = new ArrayList<>();
 
